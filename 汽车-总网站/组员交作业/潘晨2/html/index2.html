@@ -1,0 +1,121 @@
+<html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+        <link href="../css/index2.css" ype="text/css" rel="stylesheet"/> 
+        <script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+        <script type="text/javascript">
+        $(function(){
+        
+        var i=0;
+        function changeImg(){
+            $("#content ul").animate({
+                "left":"+="+100+"%"
+            },600,function(){
+                $(this).css("left",0).children("li").last().after($(this).children("li").first());
+                i++;
+                
+                    })
+                }
+            setInterval(changeImg,2000);
+            })
+        </script>
+        <title>嘉润微车行——让您最放心的车辆交易平台</title>
+	</head>
+	<body>
+		<div class="header">
+			<h2>嘉润微车行</h2>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">报价</a></li>
+				<li><a href="#">油耗</a></li>
+				<li><a href="#">养护</a></li>
+				<li><a href="#">口碑</a></li>
+				<li><a href="#">论坛</a></li>
+			</ul>
+		</div>
+		<div id="window">
+            <div id="content">
+                <ul>
+                    <li><img src="../img/icq5dam.resized.img.485.low.time1555397548899.jpg"></li>
+                    <li><img src="../img/icq5dam.resized.img.585.low.time1549846150089.jpg"></li>
+                    <li><img src="../img/icq5dam.resized.img.585.low.time1549846241430.jpg"></li>
+                    <li><img src="../img/icq5dam.resized.img.585.low.time1549846242445.jpg"></li>
+                    <li><img src="../img/ionline-booking.jpg.asset.1549846244056.jpg"></li>
+                </ul>
+            </div>
+       </div>
+       <div class="more">
+       	    <div class="left">
+       	    	<h3>大空间，大视野</h3>
+       	    	<p>热销SUV推荐</p>
+       	    	<a href="#"><img src="../img/ituijian.jpg"></a>
+       	    </div>
+       	    <div class="right">
+       	    	<div class="top"><a href="#"><img src="../img/iyouhui.jpg"></a></div>
+       	    	<div class="bottom"><a href="#"><img src="../img/iyuyue.jpg"></a></div>
+       	    </div>
+       </div>
+       <div class="newCar">
+       	    <div class="biaoti">
+       	    	<span>新车推荐</span><a href="#">更多>></a>
+       	    </div>
+       	    <ul>
+       	    	<li>
+       	    		<div class="img-left"><a href="#"><img src="../img/car1.jpg"></a></div>
+       	    		<div class="font-right">
+       	    			<p>奔驰SL级 2011款 SL 300</p>
+       	    			<p>Grand Edition</p>
+       	    			<p>发动机：3.0L 231马力 V6</p>
+       	    			<p>变速箱：7挡手自一体</p>
+       	    		</div>
+       	    	</li>
+       	    	<li>
+       	    		<div class="img-left"><a href="#"><img src="../img/car2.jpg"></a></div>
+       	    		<div class="font-right">
+       	    			<p>本田CR-Z 2012款 hydrid</p>
+       	    			<p>发动机：1.5L 113马力 L4</p>
+       	    			<p>变速箱：CVT无级变速（模拟7挡）</p>
+       	    		</div>
+       	    	</li>
+       	    	<li>
+       	    		<div class="img-left"><a href="#"><img src="../img/car3.jpg"></a></div>
+       	    		<div class="font-right">
+       	    			<p>奥迪TT 2008款 TT Coupe</p>
+       	    			<p>2.0TFSI</p>
+       	    			<p>发动机：2.0T 200马力 L4</p>
+       	    			<p>变速箱：6挡双离合</p>
+       	    		</div>
+       	    	</li>
+       	    </ul>
+       </div>
+       <div class="news">
+       	    <div class="biaoti">
+       	    	<span>新闻资讯</span><a href="#">更多>></a>
+       	    </div>
+       	    <ul>
+       	    	<li>
+       	    		<a href="#">
+       	    		<p>长城哈佛派礼宾版汽车正式开卖</p>
+       	    		<p><span class="l1">价格优惠 五一有优惠</span><span class="r1">2015-05-24</span></p>
+       	    	    </a>
+       	    	</li>
+       	    	<li>
+       	    		<a href="#">
+       	    		<p>长安马自达2标准行轿车</p>
+       	    		<p><span class="l1">您的首选汽车</span><span>2015-05-22</span></p>
+       	    	    </a>
+       	    	</li>
+       	    </ul>
+       </div>
+       <div class="footer">
+       	    <p>Copyright 2015QHD二手车版权所有</p>
+       	    <p>意见反馈</p>
+       </div>
+	</body>
+</html>

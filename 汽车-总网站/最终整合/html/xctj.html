@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public1.css" ype="text/css" rel="stylesheet" />
+    <link href="../css/jtck.css" ype="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //二级菜单
+            $("#pnav").click(function () {
+                if ($(this).hasClass("close")) {
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                } else {
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <img src="../img/pub-logo.jpg" alt="" class="plogo">
+        <select class="check">
+            <option value="0">秦皇岛</option>
+            <option value="1">唐山</option>
+        </select>
+        <input type="text" name="text" value="">
+        <img src="../img/pub-me.png" alt="" class="pme">
+    </div>
+    <div class="nav">
+        <a href="index2.html" style="color:#8a8989;text-decoration: none;font-size: 1.6rem;"><img src="../img/pub-home.png" alt="" class="phome">新车推荐  </a>
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav">
+        <ul class="navul">
+            <li><a href="index2.html">首页</a></li>
+				<li><a href="#">报价</a></li>
+				<li><a href="#">油耗</a></li>
+				<li><a href="#">养护</a></li>
+				<li><a href="#">口碑</a></li>
+				<li><a href="#">论坛</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="intro">
+            <img src="../img/xctj20190508211643.png" alt="">
+        </div>
+        <div class="intro_car">
+            <h3>最新车源</h3>
+            <div class="car car_one">
+                <img src="../img/xctj20190508212456.png" alt="">
+                <div class="right">
+                    <h4>奔驰s级&nbsp;&nbsp;2011款 SL&nbsp;300&nbsp;Grand&nbsp;Edition</h4>
+                    <p><span>56.80万</span>2万公里2013年购买</p>
+                </div>
+            </div>
+            <div class="car car_two">
+                    <img src="../img/xctj20190508212456.png" alt="">
+                    <div class="right">
+                        <h4>奔驰s级&nbsp;&nbsp;2011款 SL&nbsp;300&nbsp;Grand&nbsp;Edition</h4>
+                        <p><span>56.80万</span>2万公里2013年购买</p>
+                    </div>
+            </div>
+            <div class="car car_three">
+                <img src="../img/xctj20190508212456.png" alt="">
+                        <div class="right">
+                            <h4>奔驰s级&nbsp;&nbsp;2011款 SL&nbsp;300&nbsp;Grand&nbsp;Edition</h4>
+                            <p><span>56.80万</span>2万公里2013年购买</p>
+                        </div>
+                    </div>
+            
+        </div>
+        <div class="footer" >Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    </div>
+   
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+
+</html>

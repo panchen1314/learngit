@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public.css" type="text/css" rel="stylesheet"/> 
+    <link href="../css/ask.css" type="text/css" rel="stylesheet"/> 
+    <script type="text/javascript" src="../jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //二级菜单
+            $("#pnav").click(function(){
+                if($(this).hasClass("close")){
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                }else{
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <img src="../img/pub-logo.jpg" alt="" class="plogo">
+        <select class="check"> 
+            <option value="0">秦皇岛</option> 
+            <option value="1">唐山</option> 
+        </select> 
+        <input type="text" name="text" value="">
+        <img src="../img/pub-me.png" alt="" class="pme">
+    </div>
+    <div class="nav">
+        <a href="index.html"><img src="../img/pub-home.png" alt="" class="phome"></a>
+        求购信息
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav" >
+        <ul class="navul">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="buy.html">买车</a></li>
+            <li><a href="order.html">预约过户</a></li>
+            <li><a href="details.html">竞价</a></li>
+            <li><a href="sell.html">卖车</a></li>
+            <li><a href="entity.html">二手车评估</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+    	<form>
+    		<div class="aone">
+    		     <div>品牌:</div>
+    		     <div>
+    			     <select name="pinpai">
+    			          <option value="  " selected></option>
+    			          <option value="aodi">奥迪</option>
+    			          <option value="benczz">奔驰</option>
+    			          <option value="dazhong">大众</option>
+    			          <option value="baoma">宝马</option>
+    			          <option value="jiebao">捷豹</option>
+    			          <option value="yema">野马</option>
+    		         </select>
+    		    </div>
+    		</div>
+    		<div class="aone">
+    		     <div>价格:</div>
+    		     <div>
+    			     <select name="size">
+    			          <option value="  " selected></option>
+    			          <option value="a">1-10万</option>
+    			          <option value="b">10-15万</option>
+    			          <option value="c">15-20万</option>
+    			          <option value="d">20-30万</option>
+    			          <option value="e">30-40万</option>
+    			          <option value="f">40-60万</option>
+    			          <option value="g">60-80万</option>
+    			          <option value="h">80-100万</option>
+    			          <option value="i">100万以上</option>
+    		         </select>
+    		    </div>
+    		</div>
+    		
+    		
+    		<div class="aone">
+    		     <div>排量:</div>
+    		     <div>
+    			     <select name="pailiang">
+    			          <option value="  " selected></option>
+    			          <option value="pa">1.2t</option>
+    			          <option value="pb">1.4t</option>
+    			          <option value="pc">2.0t</option>
+    			          <option value="pd">3.0t</option>
+    			          <option value="pe">1.5l</option>
+    			          <option value="pf">1.8l</option>
+    			          <option value="pg">2.0l</option>
+    		         </select>
+    		    </div>
+    		</div>
+    		
+    		<div class="aone">
+    		     <div>产地:</div>
+    		     <div>
+    			     <select name="local">
+    			          <option value="  " selected></option>
+    			          <option value="la">德国</option>
+    			          <option value="lb">韩国</option>
+    			          <option value="lc">美国</option>
+    			          <option value="ld">日本</option>
+    			          <option value="le">英国</option>
+    			          <option value="lf">其他</option>
+    		         </select>
+    		    </div>
+    		</div>
+    		
+    		<div class="aone">
+    		     <div>配置:</div>
+    		     <div>
+    			     <select name="pailiang">
+    			          <option value="  " selected></option>
+    			          <option value="pa">1.2t</option>
+    			          <option value="pb">1.4t</option>
+    			          <option value="pc">2.0t</option>
+    			          <option value="pd">3.0t</option>
+    			          <option value="pe">1.5l</option>
+    			          <option value="pf">1.8l</option>
+    			          <option value="pg">2.0l</option>
+    		         </select>
+    		    </div>
+    		</div>
+    		
+    		<div class="aone">
+    		     <div style="margin-left: -1.1em;">变速箱:</div>
+    		     <div>
+    			     <select name="change">
+    			          <option value="  " selected></option>
+    			          <option value="ca">手动</option>
+    			          <option value="cb">普通自动</option>
+    			          <option value="cc">手自一体</option>
+    			          <option value="cd">无级变速</option>
+    			          <option value="ce">双离合变速</option>
+    		         </select>
+    		    </div>
+    		</div>
+    		<div class="aone">
+    		     <div style="vertical-align: top;margin-right: 0px;">要求：</div>
+    		     <div>
+  				    <textarea><买家留言></textarea>
+  				</div>
+    		</div>
+    		<input type="submit" value="提交" />
+    	</form>
+    </div>
+    <div class="footer">Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+</html>

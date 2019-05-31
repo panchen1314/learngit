@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public.css" ype="text/css" rel="stylesheet"/> 
+    <link href="../css/sell.css" ype="text/css" rel="stylesheet"/> 
+    <script type="text/javascript" src="../jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //二级菜单
+            $("#pnav").click(function(){
+                if($(this).hasClass("close")){
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                }else{
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <img src="../img/pub-logo.jpg" alt="" class="plogo">
+        <select class="check"> 
+            <option value="0">秦皇岛</option> 
+            <option value="1">唐山</option> 
+        </select> 
+        <input type="text" name="text" value="">
+        <img src="../img/pub-me.png" alt="" class="pme">
+    </div>
+    <div class="nav">
+        <a href="../index.html"><img src="../img/pub-home.png" alt="" class="phome"></a>
+        指导手册
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav" >
+        <ul class="navul">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="buy.html">买车</a></li>
+            <li><a href="order.html">预约过户</a></li>
+            <li><a href="details.html">竞价</a></li>
+            <li><a href="sell.html">卖车</a></li>
+            <li><a href="entity.html">二手车评估</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="title" href="#">
+            <h2>车辆信息</h2>
+        </div>
+        <div class="p" href="#">
+            <h3>品牌</h3>
+            <select name="car" size="1" class="pp">
+                    <option value="">全部品牌</option>
+                    <option value="">奔驰</option>
+                    <option value="">玛莎拉蒂</option>
+                    <option value="">保时捷</option>
+            </select>
+        </div>
+        <div class="p" href="#">
+            <h3>所在地</h3>
+            <select name="car" size="1" class="pp">
+                    <option value="">默认排序</option>
+                    <option value="">按价格排序</option>
+                    <option value="">按年份排序</option>
+                    <option value="">按综合评价排序</option>
+            </select>
+        </div>
+        <div class="p" href="#">
+            <h3>上牌日期</h3>
+            <select name="car" size="1" class="pp">
+                    <option value="">默认排序</option>
+                    <option value="">按价格排序</option>
+                    <option value="">按年份排序</option>
+                    <option value="">按综合评价排序</option>
+            </select>
+        </div>
+        <div class="p" href="#">
+            <h3>行驶里程</h3>
+            <select name="car" size="1" class="pp">
+                    <option value="">默认排序</option>
+                    <option value="">按价格排序</option>
+                    <option value="">按年份排序</option>
+                    <option value="">按综合评价排序</option>
+            </select>
+        </div>
+        <div class="p" href="#">
+            <h3>预售价格</h3>
+            <select name="car" size="1" class="pp">
+                    <option value="">默认排序</option>
+                    <option value="">按价格排序</option>
+                    <option value="">按年份排序</option>
+                    <option value="">按综合评价排序</option>
+            </select>
+        </div>
+        <div class="p" href="#">
+            <h3>车体颜色</h3>
+            <select name="car" size="1" class="pp">
+                    <option value="">默认排序</option>
+                    <option value="">按价格排序</option>
+                    <option value="">按年份排序</option>
+                    <option value="">按综合评价排序</option>
+            </select>
+        </div>
+        <div class="a" href="#">
+            <h3>上传照片</h3>
+            <img src="../img/la.jpg">
+        </div>
+        <div class="black"></div>
+        <div class="title">
+            <h2>手续信息</h2>
+        </div>
+        <div class="p" href="#">
+                <h3>登记证</h3>
+                <select name="car" size="1" class="pp">
+                        <option value="">全部品牌</option>
+                        <option value="">奔驰</option>
+                        <option value="">玛莎拉蒂</option>
+                        <option value="">保时捷</option>
+                </select>
+            </div>
+            <div class="p" href="#">
+                <h3>行车证</h3>
+                <select name="car" size="1" class="pp">
+                        <option value="">默认排序</option>
+                        <option value="">按价格排序</option>
+                        <option value="">按年份排序</option>
+                        <option value="">按综合评价排序</option>
+                </select>
+            </div>
+            <div class="p" href="#">
+                <h3>购车发票</h3>
+                <select name="car" size="1" class="pp">
+                        <option value="">默认排序</option>
+                        <option value="">按价格排序</option>
+                        <option value="">按年份排序</option>
+                        <option value="">按综合评价排序</option>
+                </select>
+            </div>
+        <div class="title">
+            <h2>车主信息</h2>
+        </div>
+        <div class="p" href="#">
+                <h3>联系人</h3>
+        </div>
+        <div class="p" href="#">
+                <h3>联系方式</h3>
+        </div>
+        <div class="butdown">
+            <h3>提交</h3>
+        </div>
+    </div>
+    <div class="footer">Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+</html>

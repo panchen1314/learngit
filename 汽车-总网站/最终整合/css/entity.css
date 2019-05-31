@@ -1,0 +1,32 @@
+div.contents{
+    margin-top:63px;
+height:600px;
+}
+.eone>div{
+	display: inline-block;
+	font-size: 1.2em;
+	color: #666;
+	vertical-align: middle;
+	margin-top: 20px;
+}
+.eone>div>textarea{
+	width: 200px;
+	height:40px;
+	margin: 0px;
+	background: #fff;
+	margin-top:5px ;
+	font-size: 1.2em;
+}
+.contents>form>input{
+	width: 250px;
+	height: 40px;
+	background: #CACACA;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 1.2em;
+}
+.etow{
+	text-align: left;
+	margin: 30px 10%;
+	line-height: 30px;
+}

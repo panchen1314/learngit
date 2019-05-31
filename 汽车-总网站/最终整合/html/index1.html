@@ -1,0 +1,94 @@
+<html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+        <link href="../css/index1.css" ype="text/css" rel="stylesheet"/> 
+        <script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+        <script type="text/javascript">
+        $(function(){
+        
+        var i=0;
+        function changeImg(){
+            $("#content ul").animate({
+                "left":"+="+100+"%"
+            },600,function(){
+                $(this).css("left",0).children("li").last().after($(this).children("li").first());
+                i++;
+                
+                    })
+                }
+            setInterval(changeImg,2000);
+            })
+        </script>
+        <title>嘉润微车行——让您最放心的车辆交易平台</title>
+	</head>
+	<body>
+		<div class="header">
+			<h2>嘉润微车行</h2>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="jc.html">检车</a></li>
+				<li><a href="xc.html">洗车</a></li>
+				<li><a href="bx.html">保险</a></li>
+				<li><a href="wxlb.html">维护保养</a></li>
+				<li><a href="xwlb.html">新闻发布</a></li>
+			</ul>
+		</div>
+		<div id="window">
+            <div id="content">
+                <ul>
+                    <li><img src="../img/icq5dam.resized.img.585.low.time1553839332257.jpg"></li>
+                    <li><img src="../img/icq5dam.resized.img.585.low.time1553839437468.jpg"></li>
+                    <li><img src="../img/icq5dam.resized.img.585.low.time1553839503005.jpg"></li>
+                    <li><img src="../img/icq5dam.resized.img.585.low.time1553839650559.jpg"></li>
+                    <li><img src="../img/icq5dam.resized.img.585.low.time1553839895742.jpg"></li>
+                </ul>
+            </div>
+       </div>
+       <div class="more">
+       	    <div class="left">
+       	    	<h3>零配件求购</h3>
+       	    	<p>高质量，更快捷</p>
+       	    	<a href="lpjqg.html"><img src="../img/lpj.jpg"></a>
+       	    </div>
+       	    <div class="right">
+       	    	<div class="top"><a href="#"><img src="../img/tuoche.jpg"></a></div>
+       	    	<div class="bottom"><a href="#"><img src="../img/weizhang.jpg"></a></div>
+       	    </div>
+       </div>
+       <div class="news">
+       	    <div class="biaoti">
+       	    	<span>新闻动态</span><a href="xwxx.html">更多>></a>
+       	    </div>
+       	    <ul>
+       	    	<li>
+       	    		<a href="#">
+       	    		<p>【政策法规】二手车鉴定评估政策有望出台 或突破瓶颈</p>
+       	    		<p>2015-05-08<span>来源：交通新闻网</span></p>
+       	    	    </a>
+       	    	</li>
+       	    	<li>
+       	    		<a href="#">
+       	    		<p>【政策法规】二手车鉴定评估政策有望出台 或突破瓶颈</p>
+       	    		<p>2015-05-08<span>来源：交通新闻网</span></p>
+       	    	    </a>
+       	    	</li>
+       	    	<li>
+       	    		<a href="#">
+       	    		<p>【政策法规】二手车鉴定评估政策有望出台 或突破瓶颈</p>
+       	    		<p>2015-05-08<span>来源：交通新闻网</span></p>
+       	    	    </a>
+       	    	</li>
+       	    </ul>
+       </div>
+       <div class="footer">
+       	    <p>Copyright 2015QHD二手车版权所有</p>
+       	    <p>意见反馈</p>
+       </div>
+	</body>
+</html>

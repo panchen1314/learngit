@@ -1,0 +1,54 @@
+.contents>div>span{
+	display:inline-block;
+	width: 24%;
+	height: 30px;
+	border-top: #ccc 1px solid;
+	border-bottom: #ccc 1px solid;
+	border-left: #ccc 1px solid;
+	line-height: 30px;
+	background: url(../img/hb.jpg) no-repeat center right;
+}
+.contents>div{
+	margin:10px 1%;
+}
+.contents>div>span>a{
+	text-decoration: none;
+	color: #575757;
+		margin-left: -10px;
+}
+
+.xc>div{
+	margin-top: 10px;
+	float: left;
+}
+.left{
+	width: 145px;
+	height:110px;
+
+}
+.right{
+	width: 55%;
+	height: 110px;
+	text-align: left;
+	margin-left: 10px;
+}
+.left>img{
+	width:145px;;
+	height: 110px;
+	margin-left: 5px;
+}
+.right>div>a{
+	text-decoration: none;
+	color: #434343;
+	font-size: 0.8em;
+}
+.right>div{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+.add{
+	display: block;
+	margin-top: 10px;
+	color: #575757;
+}

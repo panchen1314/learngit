@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public1.css" ype="text/css" rel="stylesheet"/> 
+    <link href="../css/jc.css" ype="text/css" rel="stylesheet"/> 
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //二级菜单
+            $("#pnav").click(function(){
+                if($(this).hasClass("close")){
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                }else{
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <img src="../img/pub-logo.jpg" alt="" class="plogo">
+        <select class="check"> 
+            <option value="0">秦皇岛</option> 
+            <option value="1">唐山</option> 
+        </select> 
+        <input type="text" name="text" value="">
+        <img src="../img/pub-me.png" alt="" class="pme">
+    </div>
+    <div class="nav">
+        <a href="#"><img src="../img/pub-home.png" alt="" class="phome"></a>
+        检车预约
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav" >
+        <ul class="navul">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">检车</a></li>
+            <li><a href="#">洗车</a></li>
+            <li><a href="#">保险</a></li>
+            <li><a href="#">维护保养</a></li>
+            <li><a href="#">新闻发布</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="xx">
+            <h3>车主信息</h3>
+        </div>
+        <div class="cz">
+            <p>车主姓名:</p>
+            <input type="text" name="aa" value="" class="ab">
+        </div>
+        <div class="cz">
+            <p>手&nbsp;&nbsp;机&nbsp;&nbsp;号:</p>
+            <input type="text" name="aa" value="" class="ab">
+        </div>
+        <div class="cz">
+            <p>预约时间:</p>
+            <select name="car" size="1" class="pp">
+                <option value="">请选择时间段</option>
+                <option value="">8am-11am</option>
+                <option value="">1pm-5pm</option>
+            </select>
+        </div>
+        <!--车主信息-->
+        <div class="xx">
+            <h3>车辆信息</h3>
+        </div>
+        <div class="cz">
+            <p>车辆类型:</p>
+            <input type="text" name="aa" value="" class="ab">
+        </div>
+        <div class="cz">
+            <p>车&nbsp;&nbsp;牌&nbsp;&nbsp;号:</p>
+            <input type="text" name="aa" value="" class="ab">
+        </div>
+        <div class="cz">
+            <p>预约监测站:</p>
+            <select name="car" size="1" class="pp">
+                <option value="">请选择时间段</option>
+                <option value="">8am-11am</option>
+                <option value="">1pm-5pm</option>
+            </select>
+        </div>
+        <div class="fy">
+            <h3>共计费用：100元</h3>
+            <a href="#">
+                <button type="button">支付</button>
+            </a>     
+        </div>
+    <div class="footer">Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+</html>

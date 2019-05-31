@@ -1,0 +1,28 @@
+.contents {
+  overflow: auto;
+}
+.contents .title {
+  width: 100%;
+  text-align: left;
+  padding: 5px 15px 10px;
+  margin: 10px 0px;
+  background: #eee;
+}
+.contents .in_con {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  position: relative;
+}
+.contents .in_con .i_msg {
+  width: 40%;
+  height: 60px;
+  float: left;
+  line-height: 60px;
+  text-align: right;
+  letter-spacing: 10px;
+}
+.contents .in_con .con {
+  width: 40%;
+  height: 60px;
+}

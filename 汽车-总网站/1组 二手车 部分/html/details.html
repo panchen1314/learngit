@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public.css" ype="text/css" rel="stylesheet" />
+    <link href="../css/details.css" ype="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="../jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //二级菜单
+            $("#pnav").click(function () {
+                if ($(this).hasClass("close")) {
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                } else {
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <img src="../img/pub-logo.jpg" alt="" class="plogo">
+        <select class="check">
+            <option value="0">秦皇岛</option>
+            <option value="1">唐山</option>
+        </select>
+        <input type="text" name="text" value="">
+        <img src="../img/pub-me.png" alt="" class="pme">
+    </div>
+    <div class="nav">
+        <a href="../index.html"><img src="../img/pub-home.png" alt="" class="phome"></a>
+        车辆详情
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav">
+        <ul class="navul">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="buy.html">买车</a></li>
+            <li><a href="order.html">预约过户</a></li>
+            <li><a href="details.html">竞价</a></li>
+            <li><a href="sell.html">卖车</a></li>
+            <li><a href="entity.html">二手车评估</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="content_top">
+            <div class="content_top_info">
+                <img src="../img/800x0_1_q87_201209272329591954122.jpg" alt="">
+                <span>信息编号：15617086&nbsp;&nbsp;发布时间：2014-04-14</span>
+            </div>
+            <div class="info_intro">
+                <p>【上海】英菲尼迪&nbsp;G25(进口)2010款&nbsp;2.5L&nbsp;自动豪华运动版[G Sedan运动版]</p>
+                <p class="intro_bottom">￥：24.80万&nbsp;&nbsp;<span>预约过户</span></p>
+            </div>
+        </div>
+        <div class="content_basicInfor">
+            <span class="span">基本信息：</span>
+            <ul>
+                <li><span>上牌时间</span>：2012-1-1</li>
+                <li><span>行驶里程</span>：12万里</li>
+                <li><span>排量</span>：2.5L</li>
+                <li><span>年检到期</span>：2016-07-01</li>
+                <li><span>车身颜色</span>：银灰</li>
+                <li><span>强险到期</span>：2015-07-10</li>
+                <li><span>车身结构</span>：三厢</li>
+                <li><span>商险到期</span>：2015-07-10</li>
+                <li><span>变速箱</span>：自动</li>
+                <li><span>重大事故</span>：无</li>
+                <li style="width: 100%"><span>所在地址</span>：秦皇岛</li>
+                <li style="width: 100%"><span>保养情况</span>：在4s店维修保养</li>
+            </ul>
+        </div>
+        <div class="content_descrip">
+            <span class="span">车辆描述：</span>
+            <p>尾部设计上，威驰TRD Sportivo版行车增加了与车身包围套件，其中包括黑色的前保险抗前唇、车身侧裙
+                及后保险杠包围。此外，前保险杠两侧增加了LED日间行车灯，而前大灯组也采用了透镜并且进行了熏黑处理
+            </p>
+        </div>
+        <div class="box">
+            <ul class="nav">
+                <li class="current">正心诚意</li>
+                <li>当仁不让</li>
+            </ul>
+            <ul class="content">
+                <li class="show">
+                    <div class="same_price">
+                        <img src="../img/QQ截图20190430211028.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="same_car"></div>
+                </li>
+            </ul>
+        </div>
+        <script> /*选项卡*/
+            $(function () {
+                $(".nav>li").mouseenter(function () {
+                    $(this).addClass("current");/*加上下划线*/
+                    $(this).siblings().removeClass("current");/*未被选中的移除下划线*/
+                    var index = $(this).index();
+                    var $li = $(".content>li").eq(index);
+                    $li.siblings().removeClass("show");
+                    $li.addClass("show");
+                })
+            })
+        </script>
+    </div>
+    <div id="to_top">
+        <img src="../img/dingbu.png" alt="">
+    </div>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                var distance = $('html,body').scrollTop();
+                // console.log(distance);
+                distance> 400?$("#to_top").css({display:"block"}): $("#to_top").css({ display:"none"})
+              $("#to_top").click(function(){
+                    $("html,body").scrollTop(0);//直接返回
+                })
+            })
+        })
+    </script>
+    <div class="footer" style="position: relative;top:1rem;">Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+
+</html>

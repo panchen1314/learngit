@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public.css" ype="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../css/dindex.css">
+    <script type="text/javascript" src="../jquery-1.11.0.min.js"></script>
+    <script src="../js/mui.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //二级菜单
+            $("#pnav").click(function () {
+                if ($(this).hasClass("close")) {
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                } else {
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <img src="../img/pub-logo.jpg" alt="" class="plogo">
+        <select class="check">
+            <option value="0">秦皇岛</option>
+            <option value="1">唐山</option>
+        </select>
+        <input type="text" name="text" value="">
+        <img src="../img/pub-me.png" alt="" class="pme">
+    </div>
+    <div class="nav">
+        <a href="../index.html"><img src="../img/pub-home.png" alt="" class="phome"></a>
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav">
+        <ul class="navul">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="buy.html">买车</a></li>
+            <li><a href="order.html">预约过户</a></li>
+            <li><a href="details.html">竞价</a></li>
+            <li><a href="sell.html">卖车</a></li>
+            <li><a href="entity.html">二手车评估</a></li>
+        </ul>
+    </div>
+    <!-- <div class="contents">222222222222222222222</div> -->
+    <div id="slider" class="mui-slider">
+        <div class="mui-slider-group mui-slider-loop">
+            <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img src="http://www.dcloud.io/hellomui/images/yuantiao.jpg">
+                </a>
+            </div>
+            <!-- 第一张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="http://www.dcloud.io/hellomui/images/shuijiao.jpg">
+                </a>
+            </div>
+            <!-- 第二张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="http://www.dcloud.io/hellomui/images/muwu.jpg">
+                </a>
+            </div>
+            <!-- 第三张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="http://www.dcloud.io/hellomui/images/cbd.jpg">
+                </a>
+            </div>
+            <!-- 第四张 -->
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="http://www.dcloud.io/hellomui/images/yuantiao.jpg">
+                </a>
+            </div>
+            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img src="http://www.dcloud.io/hellomui/images/shuijiao.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+        </div>
+    </div>
+    <div class="title">
+        车源精选
+    </div>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell mui-media">
+            <a href="javascript:;">
+                <img class="mui-media-object mui-pull-left" src="http://www.dcloud.io/hellomui/images/shuijiao.jpg">
+                <div class="mui-media-body">
+                    奔驰SL级 2011款 SL300
+                    <p class='mui-ellipsis'>2万公里2013年购买</p>
+                </div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media">
+            <a href="javascript:;">
+                <img class="mui-media-object mui-pull-left" src="http://www.dcloud.io/hellomui/images/muwu.jpg">
+                <div class="mui-media-body">
+                    本田CR-Z 2012款 hybrid
+                    <p class='mui-ellipsis'>1万公里2013年购买</p>
+                </div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media">
+            <a href="javascript:;">
+                <img class="mui-media-object mui-pull-left" src="http://www.dcloud.io/hellomui/images/cbd.jpg">
+                <div class="mui-media-body">
+                    奥迪TT 2008款
+                    <p class='mui-ellipsis'>5万公里2008年购买</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="title">
+        求购信息
+    </div>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">求购长城哈弗派礼宾车</li>
+        <li class="mui-table-view-cell">求购马自达2标准行轿车</li>
+        <li class="mui-table-view-cell">求购一汽大众、东风雪铁龙</li>
+    </ul>
+
+    <div class="footer">Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    <script type="text/javascript" src="../js/public.js"></script>
+    <script>
+        var gallery = mui('.mui-slider');
+        gallery.slider({
+            interval: 5000//自动轮播周期，若为0则不自动播放，默认为0；
+        });
+    </script>
+</body>
+
+</html>

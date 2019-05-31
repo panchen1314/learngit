@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public2.css" ype="text/css" rel="stylesheet"/> 
+     <link href="../css/xcxq.css" ype="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //二级菜单
+            $("#pnav").click(function(){
+                if($(this).hasClass("close")){
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                }else{
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <span class="left-font">嘉润微车行</span>
+        <input type="text" name="text" value="">
+        <span class="right-font"><a href="#">登陆</a>&nbsp;&nbsp;<a href="#">注册</a></span>
+    </div>
+    <div class="nav">
+        <a href="#"><img src="../img/pub-home.png" alt="" class="phome"></a>
+       洗车店
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav" >
+        <ul class="navul">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">检车</a></li>
+            <li><a href="#">洗车</a></li>
+            <li><a href="#">保险</a></li>
+            <li><a href="#">维护保养</a></li>
+            <li><a href="#">新闻发布</a></li>
+        </ul>
+    </div>
+    <div class="contents" style="height: 720px;">
+    	<div style="height: 200px;"><img src="../img/xcheyou.jpg"></div>
+    	<div class="sjxq">商家详情</div>
+    	<div>此处为商家详情简介 此处为商家详情简介此处为商家详情简介 此处为商家详情简介此处为商家详情简介 此处为商家详情简介此处为商家详情简介 此处为商家详情简介</div>
+        <div class="yy">
+        	<div class="left" style="border-left: 0px;">
+        		<div>营业时间：8：00-21：00</div>
+        		<div>地址：秦皇岛市河北大街中段203号</div>
+        	</div>
+        	<div class="right" style="border-right: 0px;border-left:0px ;">
+        		<img src="../img/xtel.jpg" />
+        		<a href="tel:0335-1234567"><div>0335-1234567</div></a>
+        	</div>
+        </div>
+        <div class="fwlx">服务类型</div>
+        <table class="t" cellspacing="0" border="1px #000 solid">
+        	<tr>
+        		<td class="one">套餐一<br>50元</td>
+        		<td class="tow">养护系列<br>洗车、打蜡、养护、贴膜</td>
+        	</tr>
+        	<tr>
+        		<td class="one">套餐二<br>100元</td>
+        		<td class="tow">汽车美妆系列<br>洗车、打蜡、养护、贴膜</td>
+        	</tr>
+        	<tr>
+        		<td class="one">套餐三<br>200元</td>
+        		<td class="tow">晶纲养护系列<br>洗车、打蜡、养护、贴膜</td>
+        	</tr>
+        </table>
+        <input type="submit" value="我要洗车" />
+    </div>
+    <div class="footer">Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+</html>

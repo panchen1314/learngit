@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public2.css" ype="text/css" rel="stylesheet"/> 
+    <link href="../css/gcyy.css" ype="text/css" rel="stylesheet"/> 
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //二级菜单
+            $("#pnav").click(function(){
+                if($(this).hasClass("close")){
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                }else{
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <span class="left-font">嘉润微车行</span>
+        <input type="text" name="text" value="">
+        <span class="right-font"><a href="#">登陆</a>&nbsp;&nbsp;<a href="#">注册</a></span>
+    </div>
+    <div class="nav">
+        <a href="index2.html"><img src="../img/pub-home.png" alt="" class="phome"></a>
+        购车预约
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav" >
+        <ul class="navul">
+            <li><a href="index2.html">首页</a></li>
+				<li><a href="#">报价</a></li>
+				<li><a href="#">油耗</a></li>
+				<li><a href="#">养护</a></li>
+				<li><a href="#">口碑</a></li>
+				<li><a href="#">论坛</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="up">
+            <div class="up1">
+                <div class="upimg"><img src="../img/order.jpg"></div>
+                <div class="zi">
+                    <p>[平行进口车]丰田 Sienna2015款丰田塞纳3.5L   
+                        两驱L美版（白色）</p>
+                    <p class="spp">定金金额：10000元</p>
+                </div>
+            </div>
+        </div>
+        <div class="down">
+            <table border="1" class="tabb">
+                <tr>
+                    <td id="spp">姓名：</td>
+                    <td><input type="text" id="name">*</td>
+                </tr>
+                <tr>
+                        <td id="sp"></td>
+                    <td ><p id="true">请正确填写真实姓名</p></td>
+                </tr>
+                <tr>
+                    <td id="spp">联系电话：</td>
+                    <td><input type="text" id="tel">*</td>
+                </tr>
+                <tr>
+                    <td id="sp"></td>
+                    <td ><p id="true">用来接收购车凭证，请确保准确</p></td>
+                </tr>
+                <tr>
+                    <td id="spp">预约时间：</td>
+                    <td><input type="text" id="time">*</td>
+                </tr>
+                <tr>
+                    <td id="sp"></td>
+                    <td ><p id="true">格式为yyyy-mm-dd</p></td>
+                </tr>
+                <tr>
+                    <td ><input type="submit" value="提交" id="sub"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+</html>

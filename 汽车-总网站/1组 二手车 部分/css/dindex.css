@@ -1,0 +1,16 @@
+.title {
+  height: 32px;
+  line-height: 32px;
+  margin: 5px 0px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: #bdc3c7; }
+  .title :nth-child(1) {
+    font-size: 20px; }
+
+.mui-table-view .mui-table-view-cell {
+  display: flex;
+  justify-content: space-between; }
+
+/*# sourceMappingURL=dindex.css.map */

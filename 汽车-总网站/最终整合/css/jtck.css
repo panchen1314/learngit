@@ -1,0 +1,230 @@
+.class_one, 
+.class_two{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: auto;
+    border: 1px solid white;
+}
+.class_two{
+    position: relative;
+    top: 14rem;
+}
+.class_one h3,
+.class_two h3{
+    text-align: left;
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-indent: 5%;
+    background: #aaa;
+    color: #444;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ div.ul
+{
+    width: 100%;
+    background:aqua;
+    /* padding-bottom: 0.5rem; */
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+}
+.class_one ul
+.class_two ul{
+    width: 100%;
+    height: 2.5rem;
+    border-bottom: 1px solid #666;
+    margin-top: 0.2rem;
+    box-sizing: border-box;
+}
+.class_one  .ul_none
+,.class_two  .ul_none{
+    border-bottom: none;
+}
+.class_one ul li,
+.class_two ul li{
+    margin-left: 15%;
+    width: 35%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    float: left;
+    list-style-type: disc;
+    text-align: left;
+    color: #666;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+div.info{
+    width: 90%;
+    height: 3rem;
+    position: relative;
+    top:27.6rem;
+    border: 1px solid #666;
+}
+div.info a{
+    line-height: 3rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #666;
+
+}
+div.info span{
+    display: inline-block;
+    width: 10%;
+    height: 2rem;
+    position: absolute;
+    right: 5%;
+    background: url("../img/right-jiantou.png") no-repeat 0 0;
+    background-size: 2rem 2rem; 
+    margin-top: 0.5rem;
+}
+
+/*零配件需求*/
+form.get_form{
+    width: 100%;
+    height: auto;
+}
+form.get_form>ul{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+form.get_form>ul li{
+    width: 100%;
+    padding: 1rem 0;
+    list-style: none;
+    border-bottom: #aaa solid 1px;
+    padding-bottom: 1rem;
+    display: inline-block;
+}
+form.get_form>ul li p{
+    width: 30%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    display:inline-block;
+    text-align: right;
+    float: left;
+}
+form.get_form>ul li select{
+    width: 30%;
+    height: 2rem;
+    float: right;
+    display:inline-block;
+}
+form.get_form>ul li input{
+    width: 50%;
+    height: 2rem;
+    border: 1px solid #444;
+}
+form.get_form>ul li textarea{
+    width: 50%;
+    height: 8rem;
+    border: 1px solid #444;
+    border-radius: 1rem;
+}
+form.get_form> button{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+/*新闻详细*/
+div.new_top{
+    width: 95%;
+    height: auto;
+    margin: 1rem auto;
+}
+div.new_top img{
+    width: 100%;
+    margin-top:2rem;
+}
+div.new_top p{
+    width: 100%;
+    color: #777;
+    text-indent: 2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-align: left;
+}
+div.new_info{
+    width: 95%;
+    margin: 0 auto;
+}
+div.new_info h3{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+div.new_info p{
+    width: 100%;
+    text-align: left;
+    color: #777;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+div.new_info img{
+    width: 100%;
+    margin: 1rem 0 2rem;
+}
+/*新车推荐*/
+div.intro{
+    width: 100%;
+    margin: auto;
+    margin: 1rem auto 0;
+}
+div.intro img{
+    width: 100%;
+}
+div.intro_car{
+    width: 100%;
+    margin-top: -1rem auto;
+}
+div.intro_car h3{
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-indent: 2rem;
+    text-align: left;
+    background: rgb(235, 233, 233);
+    border-bottom: rgb(218, 213, 213) solid 1px;
+   
+}
+div.intro_car .car{
+    width: 96%;
+    margin: 1.2rem auto ;
+    overflow: hidden;
+}
+div.intro_car .car img{
+    width:40%;
+    float: left;
+}
+div.intro_car .car .right{
+    width: 60%;
+    float: left;
+}
+div.intro_car .car h4{
+    width: 90%; 
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    text-align: left;
+    margin: 0.5rem auto 1rem;
+    font-size: 1 .2rem;
+}
+div.intro_car .car p{
+    width: 100%;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+div.intro_car .car p span{
+    color: blue;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}

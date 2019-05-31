@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public1.css" ype="text/css" rel="stylesheet" />
+    <link href="../css/jtck.css" ype="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //二级菜单
+            $("#pnav").click(function () {
+                if ($(this).hasClass("close")) {
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                } else {
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <img src="../img/pub-logo.jpg" alt="" class="plogo">
+        <select class="check">
+            <option value="0">秦皇岛</option>
+            <option value="1">唐山</option>
+        </select>
+        <input type="text" name="text" value="">
+        <img src="../img/pub-me.png" alt="" class="pme">
+    </div>
+    <div class="nav">
+        <a href="#"><img src="../img/pub-home.png" alt="" class="phome"></a>
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav">
+        <ul class="navul">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">检车</a></li>
+            <li><a href="#">洗车</a></li>
+            <li><a href="#">保险</a></li>
+            <li><a href="#">维护保养</a></li>
+            <li><a href="#">新闻发布</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="class_one">
+            <h3>科目一</h3>
+            <div class="ul">
+                <ul>
+                    <li>章节练习</li>
+                    <li>顺序练习</li>
+                </ul>
+                <ul>
+                    <li>随机练习</li>
+                    <li>模拟考试</li>
+                </ul>
+                <ul>
+                    <li>我的错题集</li>
+                    <li>专项练习</li>
+                </ul>
+                <ul class="ul_none">
+                    <li>强化练习</li>
+                    <li>仿真考试</li>
+                </ul>
+            </div>
+        
+        </div>
+        <div class="class_two">
+            <h3>科目一</h3>
+            <div class="ul">
+                <ul>
+                    <li>章节练习</li>
+                    <li>顺序练习</li>
+                </ul>
+                <ul>
+                    <li>随机练习</li>
+                    <li>模拟考试</li>
+                </ul>
+                <ul>
+                    <li>我的错题集</li>
+                    <li>专项练习</li>
+                </ul>
+                <ul class="ul_none">
+                    <li>强化练习</li>
+                    <li>仿真考试</li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">
+            <a href="javascript:;">信息发布</a>
+            <span></span>
+        </div>
+    </div>
+    <div class="footer">Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+
+</html>

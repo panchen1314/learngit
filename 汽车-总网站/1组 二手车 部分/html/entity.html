@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public.css" type="text/css" rel="stylesheet"/> 
+    <link href="../css/entity.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="../jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //二级菜单
+            $("#pnav").click(function(){
+                if($(this).hasClass("close")){
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                }else{
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <img src="../img/pub-logo.jpg" alt="" class="plogo">
+        <select class="check"> 
+            <option value="0">秦皇岛</option> 
+            <option value="1">唐山</option> 
+        </select> 
+        <input type="text" name="text" value="">
+        <img src="../img/pub-me.png" alt="" class="pme">
+    </div>
+    <div class="nav">
+        <a href="../index.html"><img src="../img/pub-home.png" alt="" class="phome"></a>
+        实体评估
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav" >
+        <ul class="navul">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="buy.html">买车</a></li>
+            <li><a href="order.html">预约过户</a></li>
+            <li><a href="details.html">竞价</a></li>
+            <li><a href="sell.html">卖车</a></li>
+            <li><a href="entity.html">二手车评估</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+    	<form>
+    		<div class="eone">
+    		     <div>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</div>
+    		     <div>
+    		     	<textarea></textarea>
+    		     </div>
+    		</div>
+    		<div class="eone">
+    		     <div>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话:</div>
+    		     <div>
+    		     	<textarea></textarea>
+    		     </div>
+    		</div>
+    		<div class="eone">
+    		     <div>预约时间:</div>
+    		     <div>
+    		     	<textarea></textarea>
+    		     </div>
+    		</div>
+    		<div class="eone">
+    		     <div>预约地址:</div>
+    		     <div>
+    		     	<textarea></textarea>
+    		     </div>
+    		</div>
+    		<input type="submit" value="提交" />
+    	</form>
+    	<div class="etow">
+    		<div>公司名称：润嘉微车行</div>
+    		<div>估价人员：XXX</div>
+    		<div>联系电话：123456789</div>
+    		<div>公司地址：XXXXXXXXXX</div>
+    	</div>
+    </div>
+    <div class="footer">Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+</html>

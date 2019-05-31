@@ -1,0 +1,103 @@
+div.contents{
+    /*margin-top:65px;*/
+	height:390px;
+    width:100%;
+    background:#fff;
+}
+.contents{
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+div.contents>.up{
+    height:140px;
+    width:100%;
+    background:#f5f5f5;
+}
+div.contents>.up>.up1{
+    height:110px;
+    width:80%;
+}
+div.contents>.up>.up1>.upimg{
+    float: left;
+    margin-top:10px;
+    width:120px;
+    height:89px;
+}
+div.contents>.up>.up1>.zi{
+    float: left;
+    margin-top:10px;
+    margin-left:2%;
+    width:58%;
+    height:89px;
+}
+div.contents>.up>.up1>.zi>p{
+    font-size:1em;
+    text-align: left;
+    height:auto;
+}
+div.contents>.up>.up1>.zi>.spp{
+    font-size:1.2em;
+    text-align: left;
+    margin-top:20px;
+    height:29px;
+    color:#f00;
+}
+    
+div.contents>.up>.up1>.upimg>img{
+width:100%;
+height:100%;
+}
+
+
+
+div.contents>.down{
+    margin-top:20px;
+    height:220px;
+    width:100%;
+    background:#f5f5f5;
+}
+div.contents>.down>table{
+    width:80%;
+    text-align: left;
+    list-style-type: none;
+}
+div.contents>.down>.tabb>tr>td{
+    height:40px;
+}
+#spp{
+    width:40%;
+    font-size: 1.1em;
+    font-weight: 500;
+    height:50px;
+    text-align-last: justify;
+}
+#name,
+#ID,
+#tel{
+    height:35px;
+    width:100%;
+}
+#number{
+    height:35px;
+    width:48%;
+}
+#yzm{
+    color:#fff;
+    margin-left:3%;
+    height:35px;
+    width:48%;
+    border-radius: 8px;
+}
+#sub{
+    color:#fff;
+    height:35px;
+    width:250%;
+    /* margin-left:20%; */
+    border-radius: 8px;
+}
+div.footer{
+    position: absolute;
+    top:570px;
+}

@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public.css" ype="text/css" rel="stylesheet"/> 
+    <link href="../css/order.css" ype="text/css" rel="stylesheet"/> 
+    <script type="text/javascript" src="../jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //二级菜单
+            $("#pnav").click(function(){
+                if($(this).hasClass("close")){
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                }else{
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <img src="../img/pub-logo.jpg" alt="" class="plogo">
+        <select class="check"> 
+            <option value="0">秦皇岛</option> 
+            <option value="1">唐山</option> 
+        </select> 
+        <input type="text" name="text" value="">
+        <img src="../img/pub-me.png" alt="" class="pme">
+    </div>
+    <div class="nav">
+        <a href="sindex.html"><img src="../img/pub-home.png" alt="" class="phome"></a>
+        预约过户
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav" >
+        <ul class="navul">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="buy.html">买车</a></li>
+            <li><a href="order.html">预约过户</a></li>
+            <li><a href="details.html">竞价</a></li>
+            <li><a href="sell.html">卖车</a></li>
+            <li><a href="entity.html">二手车评估</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="up">
+            <div class="up1">
+                <div class="upimg"><img src="../img/order.jpg"></div>
+                <div class="zi">
+                    <p>宝马5系2010款 520L（商家）</p>
+                    <p>领先型 ¥21.98万</p>
+                    <p class="spp">预约金：1120</p>
+                </div>
+            </div>
+            <div class="tab">
+                <table border="1">
+                    <tr>
+                        <td id="sp">行驶里程：</td>
+                        <td>4.00万公里</td>
+                        <td id="sp">上牌年份：</td>
+                        <td>2011年11月</td>
+                    </tr>
+                    <tr>
+                        <td id="sp">年检到期：</td>
+                        <td>2015-11</td>
+                        <td id="sp">保险到期：</td>
+                        <td>2015-11</td>
+                    </tr>
+                    <tr>
+                        <td id="sp">排气量：</td>
+                        <td>1.5T</td>
+                        <td id="sp">使用时间：</td>
+                        <td>4年</td>
+                    </tr>
+                    <tr>
+                        <td id="sp">发动机：</td>
+                        <td>2.0L&nbsp;152马力</td>
+                        <td id="sp">变速器：</td>
+                        <td>自动</td>
+                    </tr>
+                    <tr>
+                        <td id="sp">车辆级别：</td>
+                        <td>中大型车</td>
+                        <td id="sp">颜色：</td>
+                        <td>香槟色</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="down">
+            <table border="1" class="tabb">
+                <tr>
+                    <td id="spp">姓名：</td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td id="spp">身份证号：</td>
+                    <td><input type="text" id="ID"></td>
+                </tr>
+                <tr>
+                    <td id="spp">联系电话：</td>
+                    <td><input type="text" id="tel"></td>
+                </tr>
+                <tr>
+                    <td id="spp">验证码：</td>
+                    <td><input type="text" id="number"><input type="submit" value="发送验证码" id="yzm"></td>
+                </tr>
+                <tr>
+                    <td ><input type="submit" value="提交" id="sub"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+</html>

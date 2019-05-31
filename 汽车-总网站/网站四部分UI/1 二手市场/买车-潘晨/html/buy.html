@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public.css" ype="text/css" rel="stylesheet"/> 
+    <link href="../css/buy.css" ype="text/css" rel="stylesheet"/> 
+    <script type="text/javascript" src="../jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript" src="../js/buy.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //二级菜单
+            $("#pnav").click(function(){
+                if($(this).hasClass("close")){
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                }else{
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <img src="../img/pub-logo.jpg" alt="" class="plogo">
+        <select class="check"> 
+            <option value="0">秦皇岛</option> 
+            <option value="1">唐山</option> 
+        </select> 
+        <input type="text" name="text" value="">
+        <img src="../img/pub-me.png" alt="" class="pme">
+    </div>
+    <div class="nav">
+        <a href="#"><img src="../img/pub-home.png" alt="" class="phome"></a>
+        买车
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav" >
+        <ul class="navul">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">买车</a></li>
+            <li><a href="#">预约过户</a></li>
+            <li><a href="#">竞价</a></li>
+            <li><a href="#">卖车</a></li>
+            <li><a href="#">二手车评估</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="con-nav">
+            <ul>
+                <li>
+                	<a href="#" class="aa">全部品牌<img src="../img/br.png"></a>
+                	<ul>
+                		<li><a href="#">欧菲莱斯</a></li>
+                		<li><a href="#">尚酷</a></li>
+                		<li><a href="#">奥迪</a></li>
+                		<li><a href="#">宝马</a></li>
+                	</ul>
+                </li>
+                <li>
+                	<a href="#" class="aa">价格<img src="../img/br.png"></a>
+                	<ul>
+                		<li><a href="#">2万-7万</a></li>
+                		<li><a href="#">7万-12万</a></li>
+                		<li><a href="#">12万-17万</a></li>
+                		<li><a href="#">17万-22万</a></li>
+                	</ul>
+                </li>
+                <li>
+                	<a href="#" class="aa">默认排序<img src="../img/br.png"></a>
+                	<ul>
+                		<li><a href="#">2万-7万</a></li>
+                		<li><a href="#">7万-12万</a></li>
+                		<li><a href="#">12万-17万</a></li>
+                		<li><a href="#">17万-22万</a></li>
+                	</ul>
+                </li>
+                <li style="border:0;">
+                	<a href="#" class="aa">筛选<img src="../img/br.png"></a>
+                	<ul>
+                		<li><a href="#">热销</a></li>
+                		<li><a href="#">性价比</a></li><li><a href="#">颜值</a></li><li><a href="#">几成新</a></li></ul></li></ul></div>
+        <div class="car1">
+        	<div class="left"><img src="../img/btimg.jpg"></div>
+        	<div class="right">
+        		<h3>欧菲莱斯 2004款 3.5</h3>
+        		<p>里程：<span>12万公里</span></p>
+        		<p style="display: inline-block;">年份：<span>2005年</span></p>
+        		<p style="display: inline-block;" class="price">￥5.50万</p>
+        		<p>个人</p>
+        	</div>
+        </div>
+        <div class="car1">
+        	<div class="left"><img src="../img/bu=1956927304,146743627&fm=27&gp=0.jpg"></div>
+        	<div class="right">
+        		<h3>欧菲莱斯 2004款 3.5</h3>
+        		<p>里程：<span>16.00万公里</span></p>
+        		<p style="display: inline-block;">年份：<span>2007年</span></p>
+        		<p style="display: inline-block;" class="price">￥4.90万</p>
+        		<p>个人</p>
+        	</div>
+        </div>
+        <div class="car1">
+        	<div class="left"><img src="../img/bu=3958579525,3390201393&fm=27&gp=0.jpg"></div>
+        	<div class="right">
+        		<h3>尚酷 2011款 2.0TSI</h3>
+        		<p>里程：<span>4.90万公里</span></p>
+        		<p style="display: inline-block;">年份：<span>2012年</span></p>
+        		<p style="display: inline-block;" class="price">￥19.79万</p>
+        		<p>个人</p>
+        	</div>
+        </div>
+        <div class="car1">
+        	<div class="left"><img src="../img/bu=743010389,178260817&fm=27&gp=0.jpg"></div>
+        	<div class="right">
+        		<h3>奥迪Q3 2015款 30TFSI</h3>
+        		<p>里程：<span>0.50万公里</span></p>
+        		<p style="display: inline-block;">年份：<span>2014年</span></p>
+        		<p style="display: inline-block;" class="price">￥25.80万</p>
+        		<p>商家</p>
+        	</div>
+        </div>
+        <div class="car1">
+        	<div class="left"><img src="../img/bu=4122670330,2848812215&fm=85&s=5B722BC0EF453F47698F9009030090D1.jpg"></div>
+        	<div class="right">
+        		<h3>宝马5系 2006款 523Li</h3>
+        		<p>里程：<span>11.70万公里</span></p>
+        		<p style="display: inline-block;">年份：<span>2007年</span></p>
+        		<p style="display: inline-block;" class="price">￥16.00万</p>
+        		<p>个人</p>
+        	</div>
+        </div>
+    </div>
+    <div class="footer">Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+</html>

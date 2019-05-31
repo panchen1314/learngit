@@ -1,0 +1,132 @@
+.contents{
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+.xcbanner{
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+.xcbanner>img{
+	width: 100%;
+	height: auto;
+}
+.xcmain{
+	position: relative;
+	width:90%;
+	height: auto;
+	overflow: auto;
+}
+.xcmatop{
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	clear: both;
+}
+.xcmatop>img{
+	width: 30%;
+	height: auto;
+	/*margin-top: 5px;*/
+	float: right;
+	margin-right: 20px;
+}
+.xcmatop>span{
+	font-size:1.5em;
+	color: #666;
+}
+.xcmamian{
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	clear: both;
+}
+.xcmamian>p{
+	font-size:1.3em;
+	color: #666;
+	float:left;
+}
+.xcmamian>ul{
+	width: 98%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	list-style-type: none;
+	margin: 0px;
+	padding:0px;
+	margin-top: 20px;
+}
+.xcmamian>ul>li{
+	width: 50%;
+	height: auto;
+	position: relative;
+	overflow: auto;
+	float: left;
+	/*padding-left: 20px;*/
+	
+	
+	margin-top: 20px;
+	font-size: 1.2em;
+	color: #666;
+	
+}
+#xctag{
+	padding-left: 30px;
+	
+}
+.xcmamian>ul>li>ul{
+	width: 98%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	list-style-type: none;
+	margin: 0px;
+	padding:0px;
+	display: none;
+	
+}
+.xcup{
+	background: url("../img/xcup.jpg") no-repeat left;
+}
+.xcdown{
+	
+	
+	background: url("../img/xdown.jpg") no-repeat left;
+}
+.xcbottom{
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	clear: both;
+}
+.xcbottom>p{
+	width: 100%;
+	text-align: left;
+
+	color: #666;
+	
+
+
+}
+.p1{
+	font-size: 1em;
+}
+.p2,.p3{
+	font-size: 1em;
+}
+
+.wywx{
+	display: block;
+	text-decoration: none;
+	font-size: 1.2em;
+	border: solid 1px #000;
+	color:#888;
+	width: 40%;
+	height: auto;
+
+}

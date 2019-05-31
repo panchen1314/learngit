@@ -1,0 +1,127 @@
+<html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+        <link href="../css/index3.css" ype="text/css" rel="stylesheet"/> 
+        <script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+        <script type="text/javascript">
+        $(function(){
+        
+        var i=0;
+        function changeImg(){
+            $("#content ul").animate({
+                "left":"+="+100+"%"
+            },600,function(){
+                $(this).css("left",0).children("li").last().after($(this).children("li").first());
+                i++;
+                
+                    })
+                }
+            setInterval(changeImg,2000);
+            })
+        </script>
+        <title>嘉润微车行——让您最放心的车辆交易平台</title>
+	</head>
+	<body>
+		<div class="header">
+			<h2>嘉润微车行</h2>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">驾校查询</a></li>
+				<li><a href="#">金牌教练</a></li>
+				<li><a href="#">报名</a></li>
+				<li><a href="#">学车指南</a></li>
+				<li><a href="#">驾校动态</a></li>
+			</ul>
+		</div>
+		<div id="window">
+            <div id="content">
+                <ul>
+                    <li><img src="../img/iu=712121919,1152661283&fm=26&gp=0.jpg"></li>
+                    <li><img src="../img/iu=3482515753,2527312532&fm=11&gp=0.jpg"></li>
+                    <li><img src="../img/iu=2812464318,2251112929&fm=26&gp=0.jpg"></li>
+                    <li><img src="../img/iu=706925990,4241672262&fm=26&gp=0.jpg"></li>
+                    <li><img src="../img/iu=2041111478,2063041008&fm=26&gp=0.jpg"></li>
+                </ul>
+            </div>
+       </div>
+       <div class="more">
+       	    <div class="left">
+       	    	<h3>驾考题库</h3>
+       	    	<p>最新，最准</p>
+       	    	<a href="#"><img src="../img/ituijian.jpg"></a>
+       	    </div>
+       	    <div class="right">
+       	    	<div class="top"><a href="#"><img src="../img/ibaom.jpg"></a></div>
+       	    	<div class="bottom"><a href="#"><img src="../img/ijiashi.jpg"></a></div>
+       	    </div>
+       </div>
+       <div class="newCar">
+       	    <div class="biaoti">
+       	    	<span>合作驾校</span><a href="#">更多>></a>
+       	    </div>
+       	    <ul>
+       	    	<li>
+       	    		<div class="img-left"><a href="#"><img src="../img/ijiaxiao1.jpg"></a></div>
+       	    		<div class="font-right">
+       	    			<p>港城驾校</p>
+       	    			<p>秦皇岛市海港区东港镇富家营村</p>
+       	    			<p>电话：0335-3015585</p>
+       	    		</div>
+       	    	</li>
+       	    	<li>
+       	    		<div class="img-left"><a href="#"><img src="../img/ijiaoxiao2.jpg"></a></div>
+       	    		<div class="font-right">
+       	    			<p>宏达驾校</p>
+       	    			<p>地址：秦皇岛北环路147号附近</p>
+       	    			<p>电话：0335-3070538</p>
+       	    		</div>
+       	    	</li>
+       	    	<li>
+       	    		<div class="img-left"><a href="#"><img src="../img/ijiaoxiao3.jpg"></a></div>
+       	    		<div class="font-right">
+       	    			<p>通达驾校</p>
+       	    			<p>地址：秦皇岛市燕山大街西段</p>
+       	    			<p>电话：0335-3650825</p>
+       	    		</div>
+       	    	</li>
+       	    	<li>
+       	    		<div class="img-left"><a href="#"><img src="../img/ijiaxiao4.jpg"></a></div>
+       	    		<div class="font-right">
+       	    			<p>港宏驾校</p>
+       	    			<p>地址：秦皇岛海港区南大寺村</p>
+       	    			<p>电话：0335-8547688</p>
+       	    		</div>
+       	    	</li>
+       	    </ul>
+       </div>
+       <div class="news">
+       	    <div class="biaoti">
+       	    	<span>驾校动态</span><a href="#">更多>></a>
+       	    </div>
+       	    <ul>
+       	    	<li>
+       	    		<a href="#">
+       	    		<p>秦皇岛港城驾校，学车一步到位！</p>
+       	    		<p><span class="r1">2015-04-24</span></p>
+       	    	    </a>
+       	    	</li>
+       	    	<li>
+       	    		<a href="#">
+       	    		<p>宏达驾校学车 学生享0首付分期付款</p>
+       	    		<p><span>2015-04-22</span></p>
+       	    	    </a>
+       	    	</li>
+       	    </ul>
+       </div>
+       <div class="footer">
+       	    <p>Copyright 2015QHD二手车版权所有</p>
+       	    <p>意见反馈</p>
+       </div>
+	</body>
+</html>

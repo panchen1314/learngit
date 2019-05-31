@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public1.css" ype="text/css" rel="stylesheet" />
+    <link href="../css/jtck.css" ype="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //二级菜单
+            $("#pnav").click(function () {
+                if ($(this).hasClass("close")) {
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                } else {
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <img src="../img/pub-logo.jpg" alt="" class="plogo">
+        <select class="check">
+            <option value="0">秦皇岛</option>
+            <option value="1">唐山</option>
+        </select>
+        <input type="text" name="text" value="">
+        <img src="../img/pub-me.png" alt="" class="pme">
+    </div>
+    <div class="nav">
+        <a href="#"><img src="../img/pub-home.png" alt="" class="phome">新闻详细 </a>
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav">
+        <ul class="navul">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">检车</a></li>
+            <li><a href="#">洗车</a></li>
+            <li><a href="#">保险</a></li>
+            <li><a href="#">维护保养</a></li>
+            <li><a href="#">新闻发布</a></li>
+        </ul>
+    </div>
+    <div class="contents">
+        <div class="new_top">
+            <h1>二手车试车如何操作？</h1>
+            <img src="../img/xwxx20190508204659.png" alt="">
+            <p>买二手车的时候我们都不会落下的步骤就是对车辆外饰和内饰的彻底检查，很多时候，我们眼睛看到的并不一定都是真实的
+                ，唯有经过实践检验的是真理，所以二手车试驾无论如何都不可说的一个步骤。那么二手车如何操作呢？
+            </p>
+        </div>
+        <div class="new_info">
+            <div class="new_info_value new_info_one">
+                <h3>一、感受车内空间</h3>
+                <p>首先进入车内,主要感受一下坐在车内是否舒适,空间感是否正符合自身的需求,是否手脚舒展自由不拘束,
+                    座位是否柔软舒适,座位周围的装备是否齐备等等。这些都是需要切身感受才能得知不能光听经销商在那片面的称赞夸大。</p>
+            </div>
+            <div class="new_info_value new_info_two">
+                <h3>二、检查发动机是否有异响</h3>
+                <p>首先进入车内,主要感受一下坐在车内是否舒适,空间感是否正符合自身的需求,是否手脚舒展自由不拘束,座位是否柔软舒适,
+                    座位周围的装备是否齐备等等。这些都是需要切身感受才能得知,不能光听经销商在那片面的称赞夸大。</p>
+                <img src="../img/xwxx20190508210121.png" alt="">
+            </div>
+            <div class="new_info_value new_info_three">
+                <h3>三、慢加油,测试怠速是否稳定</h3>
+                <p>然后开始启动发动机,在启动发动机后,要注意听发动机是否有异响,运行的时候是否平稳,会不会出现断断续续的情况。发动机是整辆
+                    车最核心的部位,一定要保证其性能良好,通过二手车试车来判断它的真实情况。如果岀现发动机异响,断断续续的情况,坚决不能购买此类车。</p>
+            </div>
+            <div class="new_info_value new_info_four">
+                <h3>四、试用挂挡是否顺利</h3>
+                <p>试驾时要注意在车辆行驶变速的情况下挂档是否顺利,会不会出现卡档的情况,换挡时齿轮有没响。如果出现异响,则说明离合器和齿轮可能有
+                    存在问题。还要测试刹车是否好用,是否制动性良好,刹车力够不够。同时还要测试下车辆在不同的车速</p>
+            </div>
+        </div>
+        <div class="footer" >Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    </div>
+    
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+
+</html>

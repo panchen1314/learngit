@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/public2.css" ype="text/css" rel="stylesheet"/> 
+    <link href="../css/hzjx.css" ype="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //二级菜单
+            $("#pnav").click(function(){
+                if($(this).hasClass("close")){
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                }else{
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+<body>
+    <div class="headone">嘉润微车行</div>
+    <div class="headtwo">
+        <span class="left-font">嘉润微车行</span>
+        <input type="text" name="text" value="">
+        <span class="right-font"><a href="#">登陆</a>&nbsp;&nbsp;<a href="#">注册</a></span>
+    </div>
+    <div class="nav">
+        <a href="#"><img src="../img/pub-home.png" alt="" class="phome"></a>
+       驾校列表
+        <!-- XXXX为自己替换名字 -->
+        <img src="../img/pub-nav.png" alt="" class="pnav" id="pnav" >
+        <ul class="navul">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">检车</a></li>
+            <li><a href="#">洗车</a></li>
+            <li><a href="#">保险</a></li>
+            <li><a href="#">维护保养</a></li>
+            <li><a href="#">新闻发布</a></li>
+        </ul>
+    </div>
+    <div class="contents" style="height: 730px;">
+    	<div><span style="border-left:0"><a href="#">省市</a></span><span><a href="#">价格</a></span><span><a href="#">口碑</a></span><span><a href="#">人气</a></span></div>
+        <div class="jx">
+        	  <div class="left"><img src="../img/hgangcheng.jpg"></div>
+        	  <div class="right">
+        	  	<div><a href="#" style="font-size: 1.5em;color: #00BFFF;">港城驾校</a></div>
+        	  	<div><a href="#">地址：秦皇岛海港区太阳城附近</a></div>
+        	  	<div><a href="#">电话：0335-3015585</a></div>
+        	  </div>
+        </div><br>
+        
+        <div class="jx">
+        	  <div class="left"><img src="../img/hpingan.jpg"></div>
+        	  <div class="right">
+        	  	<div><a href="#" style="font-size: 1.5em;color: #00BFFF;">平安驾校</a></div>
+        	  	<div><a href="#">地址：秦皇岛北戴河车站附近</a></div>
+        	  	<div><a href="#">电话：0335-3015585</a></div>
+        	  </div>
+        </div><br>
+        
+        <div class="jx">
+        	  <div class="left"><img src="../img/hhongda.jpg"></div>
+        	  <div class="right">
+        	  	<div><a href="#" style="font-size: 1.5em;color: #00BFFF;">宏达驾校</a></div>
+        	  	<div><a href="#">地址：秦皇岛北环路147号</a></div>
+        	  	<div><a href="#">电话：0335-3015585</a></div>
+        	  </div>
+        </div><br>
+        
+        <div class="jx">
+        	  <div class="left"><img src="../img/htongda.jpg"></div>
+        	  <div class="right">
+        	  	<div><a href="#" style="font-size: 1.5em;color: #00BFFF;">通达驾校</a></div>
+        	  	<div><a href="#">地址：秦皇岛燕山大街西段</a></div>
+        	  	<div><a href="#">电话：0335-3015585</a></div>
+        	  </div>
+        </div><br>
+        
+        <div class="jx">
+        	  <div class="left"><img src="../img/hganghong.jpg"></div>
+        	  <div class="right">
+        	  	<div><a href="#" style="font-size: 1.5em;color: #00BFFF;">港宏驾校</a></div>
+        	  	<div><a href="#">地址：秦皇岛海港区南大寺村</a></div>
+        	  	<div><a href="#">电话：0335-3015585</a></div>
+        	  </div>
+        </div><br>
+        <div class="add">加载更多</div>
+    </div>
+    <div class="footer">Copyright 2015 QHD二手车版权所有<br>意见反馈</div>
+    <script type="text/javascript" src="../js/public.js"></script>
+</body>
+</html>

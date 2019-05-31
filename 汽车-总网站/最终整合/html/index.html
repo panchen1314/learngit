@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link href="../css/index.css" ype="text/css" rel="stylesheet"/> 
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //二级菜单
+            $("#pnav").click(function(){
+                if($(this).hasClass("close")){
+                    $(this).next("ul").slideUp(1000);
+                    $(this).removeClass("close");
+                    $(this).addClass("open");
+                }else{
+                    $(this).next("ul").slideDown(1000);
+                    $(this).removeClass("open");
+                    $(this).addClass("close");
+                }
+            })
+        })
+        function scrolls(){
+                $("#banner").animate({"left":"-420px"},500,function(){
+                    $(this).css("left","0px").append($(this).children("img:first")).delay(1000);
+                })
+            }
+        setInterval(scrolls,1500);
+    </script>
+    <title>嘉润微车行——让您最放心的车辆交易平台</title>
+</head>
+<body>
+<div class="banner" id="banner">
+<img src="../img/ic1.jpg" alt="" id="pic">
+<ul id="nav">
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+</ul>
+</div>
+<div class="contents">
+    <div class="con">
+        <div class="igd" style="float:right;"><img src="../img/ic1.jpg" href="sindex.html" onclick="location.href=this.getAttribute('href')"></div>
+        <div class="izi">
+            <h3><a href="sindex.html">二手车市场</a></h3>
+            <p>为您提供精品买卖平台</p>
+        </div>
+    </div>
+    <div class="con">
+            <div class="igd"><img src="../img/ic2.jpg" href="index1.html" onclick="location.href=this.getAttribute('href')"></div>
+            <div class="izi">
+                <h3><a href="index1.html">4S服务</a></h3>
+                <p>让您的爱车倍感舒适</p>
+            </div>
+    </div>
+    <div class="con">
+        <div class="igd"  style="float:right;"><img src="../img/ic3.jpg" href="index3.html" onclick="location.href=this.getAttribute('href')"></div>
+        <div class="izi">
+            <h3><a href="index3.html">精品驾校</a></h3>
+            <p>快捷、高效、有保障</p>
+        </div>
+    </div>
+    <div class="con">
+        <div class="igd"><img src="../img/ic4.jpg" href="index2.html" onclick="location.href=this.getAttribute('href')"></div>
+        <div class="izi">
+            <h3><a href="index2.html">检车无忧</a></h3>
+            <p>安全、零风险、快捷</p>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>
